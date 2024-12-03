@@ -6,41 +6,88 @@
     <title>Project Links</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f4f7;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
             text-align: center;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
             padding: 20px;
-            background-color: #f4f4f4;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
-        h1 {
-            color: #333;
-        }
-        ul {
+        .projects ul {
             list-style-type: none;
             padding: 0;
         }
-        li {
-            margin: 10px 0;
+        .projects li {
+            background-color: #007BFF;
+            color: white;
+            margin: 15px 0;
+            padding: 15px;
+            text-align: center;
+            border-radius: 5px;
+            transition: background-color 0.3s;
         }
-        a {
+        .projects li:hover {
+            background-color: #0056b3;
+        }
+        .projects a {
             text-decoration: none;
-            color: #007BFF;
-            font-size: 18px;
+            color: white;
+            font-size: 1.2em;
+            display: block;
         }
-        a:hover {
-            text-decoration: underline;
-            color: #0056b3;
+        .projects a:hover {
+            color: #ffd700;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            margin-top: 40px;
+        }
+        footer p {
+            margin: 0;
+            font-size: 1em;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to My Projects</h1>
-    <p>Click on any project to view it:</p>
-    <ul>
-        <li><a href="Project_1_Drawing_Circle.html" target="_blank">Project 1: Drawing Circle</a></li>
-        <li><a href="Project_2_Digital_Clock.html" target="_blank">Project 2: Digital Clock</a></li>
-        <li><a href="Project_3_Restaurant.html" target="_blank">Project 3: Restaurant Website</a></li>
-        <li><a href="Project_4_Meeseva_Website.html" target="_blank">Project 4: Meeseva Website</a></li>
-        <li><a href="Project_5_Tic-Toe-Game.html" target="_blank">Project 5: Tic-Tac-Toe Game</a></li>
-    </ul>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <p>Made by: Ch Sai Krishna</p>
+    </header>
+
+    <div class="container">
+        <p style="text-align: center; font-size: 1.2em;">Click on any project to view it:</p>
+        <div class="projects">
+            <ul>
+                <li><a href="Project_1_Drawing_Circle.html" target="_blank">Project 1: Drawing Circle</a></li>
+                <li><a href="Project_2_Digital_Clock.html" target="_blank">Project 2: Digital Clock</a></li>
+                <li><a href="Project_3_Restaurant.html" target="_blank">Project 3: Restaurant Website</a></li>
+                <li><a href="Project_4_Meeseva_Website.html" target="_blank">Project 4: Meeseva Website</a></li>
+                <li><a href="Project_5_Tic-Toe-Game.html" target="_blank">Project 5: Tic-Tac-Toe Game</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Ch Sai Krishna. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
