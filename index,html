@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Links</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+        }
+        a {
+            text-decoration: none;
+            color: #007BFF;
+            font-size: 18px;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Projects</h1>
+    <p>Click on any project to view it:</p>
+    <ul>
+        <li><a href="project_1_Drawing_Circle.html" target="_blank">Project 1: Drawing Circle</a></li>
+        <li><a href="Project_2_Digital_Clock.html" target="_blank">Project 2: Digital Clock</a></li>
+        <li><a href="Project_3_Restaurant.html" target="_blank">Project 3: Restaurant Website</a></li>
+        <li><a href="Project_4_Meeseva_Website.html" target="_blank">Project 4: Meeseva Website</a></li>
+        <li><a href="Project_5_Tic-Toe-Game.html" target="_blank">Project 5: Tic-Tac-Toe Game</a></li>
+    </ul>
+</body>
+</html>
