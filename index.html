@@ -32,6 +32,9 @@
         .projects ul {
             list-style-type: none;
             padding: 0;
+            display: none;
+            transition: max-height 0.5s ease;
+            max-height: 0;
         }
         .projects li {
             background-color: #007BFF;
@@ -54,6 +57,19 @@
         .projects a:hover {
             color: #ffd700;
         }
+        .toggle-btn {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .toggle-btn:hover {
+            background-color: #0056b3;
+        }
         footer {
             background-color: #333;
             color: white;
@@ -74,7 +90,10 @@
     </header>
 
     <div class="container">
-        <p style="text-align: center; font-size: 1.2em;">Click on any project to view it:</p>
+        <p style="text-align: center; font-size: 1.2em;">Click the button below to view my projects:</p>
+        
+        <button class="toggle-btn" onclick="toggleProjects()">Show Projects</button>
+        
         <div class="projects">
             <ul>
                 <li><a href="Project_1_Drawing_Circle.html" target="_blank">Project 1: Drawing Circle</a></li>
@@ -89,5 +108,21 @@
     <footer>
         <p>&copy; 2024 Ch Sai Krishna. All Rights Reserved.</p>
     </footer>
+
+    <script>
+        function toggleProjects() {
+            const projects = document.querySelector('.projects ul');
+            const button = document.querySelector('.toggle-btn');
+            if (projects.style.display === "none" || projects.style.display === "") {
+                projects.style.display = "block";
+                projects.style.maxHeight = "500px"; // Adjust max height as needed
+                button.textContent = "Hide Projects";
+            } else {
+                projects.style.display = "none";
+                projects.style.maxHeight = "0";
+                button.textContent = "Show Projects";
+            }
+        }
+    </script>
 </body>
 </html>
